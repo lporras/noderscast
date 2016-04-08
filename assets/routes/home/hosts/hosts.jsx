@@ -18,7 +18,7 @@ var hosts = [
   {
     nombre:"Luis",
     apodo:"luchito",
-    img:"https://pbs.twimg.com/profile_images/619293112561745921/rlG-XJhE.jpg",
+    img:"https://pbs.twimg.com/profile_images/669330216326701056/Y-4rr0Gs.jpg",
     twitter:"lporras16",
     descripcion:"Lorem ipsum dolor sit luca melón con vino pichanga coscacho ni ahí peinar la muñeca chuchada al chancho achoclonar. Chorrocientos pituto ubicatex huevo duro bolsero cachureo el hoyo del queque en cana huevón el año del loly hacerla corta impeque.."
   }
@@ -33,7 +33,7 @@ var Presenter = React.createClass({
           <div className="caption">
             <a className="" href={"http://twitter.com/"+this.props.twitter} target="_blank">
               <h3 className="text-center">
-                <span>{this.props.nombre}</span> 
+                <span>{this.props.nombre}</span>
                 <i className="fa fa-fw fa-twitter"/>
               </h3>
             </a>
@@ -48,7 +48,7 @@ module.exports = React.createClass({
   render : function() {
     var presenters = hosts.map(function(host){
       return (
-        <Presenter 
+        <Presenter
           nombre={host.nombre}
           img={host.img}
           apodo={host.apodo}
